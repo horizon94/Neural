@@ -127,6 +127,7 @@ if __name__ == "__main__":
   # f1 scores
   label_f1 = f1_score(gold, predictions, average=None)
 
+
   print
   for label, idx in dataset.label2int.items():
     print 'f1(%s)=%f' % (label, label_f1[idx])
